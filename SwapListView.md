@@ -4,6 +4,7 @@
  
  *  Add SwapListView.cs in your prtable project.
  *  Add SwapListViewRenderer.cs in your Droid.project
+ *  Add SwapListViewRenderer.cs in your IOS.project
  *  Change your ListView in Xaml File :
  
 ```cpp
