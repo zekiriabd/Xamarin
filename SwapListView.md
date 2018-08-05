@@ -28,6 +28,14 @@
 </ListView>
 ```
 
+## Platform Support
+
+|Platform|Version|
+| ------------------- | :------------------: |
+|Xamarin.iOS|iOS 8+|
+|Xamarin.Android|API 14+|
+
+
 <p align="center">
   <img src="https://i.imgur.com/fhdS1Hv.gif" alt="badges" style="margin:auto">
 </p>
