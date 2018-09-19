@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FacebookLogin.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,8 +14,9 @@ namespace DevEnvExeLogin
         public HomePage()
         {
             InitializeComponent();
-            txUserID.Text = FacebookAuth.User.Id;
-            txUserName.Text=  FacebookAuth.User.Name;
+            txUserID.Text = ((GUserM)FacebookAuth.User).id;
+            txUserName.Text= ((GUserM)FacebookAuth.User).name;
+            imgUserProfile.Source = ((GUserM)FacebookAuth.User).picture;
             //imgUserImage.Image= UIimage.LoadFormData
         }
     }

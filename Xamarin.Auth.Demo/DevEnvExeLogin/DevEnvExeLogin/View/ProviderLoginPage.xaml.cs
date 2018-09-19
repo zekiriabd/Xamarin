@@ -5,11 +5,12 @@ namespace DevEnvExeLogin
 {
     public partial class ProviderLoginPage : ContentPage
     {
-       
-        public ProviderLoginPage()
+        public string ProviderName { get; set; }
+        public ProviderLoginPage(string _providername)
         {
             InitializeComponent();
-           
+            ProviderName = _providername;
+
         }
     }
 }

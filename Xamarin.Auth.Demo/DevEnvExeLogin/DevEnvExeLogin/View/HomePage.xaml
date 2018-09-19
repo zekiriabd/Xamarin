@@ -11,7 +11,9 @@
         
         <Label Text="Name:"></Label>
         <Label VerticalOptions="Center" HorizontalOptions="Center" x:Name="txUserName" />
-        
+
+        <Label Text="image:"></Label>
+        <Image VerticalOptions="Center" HorizontalOptions="Center" x:Name="imgUserProfile" />
     </StackLayout>
 
 </ContentPage>

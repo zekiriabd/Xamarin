@@ -10,9 +10,9 @@ namespace DevEnvExeLogin
             InitializeComponent();
         }
    
-        private void FaceBookLogin_Clicked(object sender, EventArgs e)
+        private void Login_Clicked(object sender, EventArgs e)
         {
-             Navigation.PushModalAsync(new ProviderLoginPage());
+             Navigation.PushModalAsync(new ProviderLoginPage(((Button)sender).Text));
         }
     }
 }

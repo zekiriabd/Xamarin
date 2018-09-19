@@ -7,9 +7,9 @@
     <Entry Placeholder="Username" />
     <Entry IsPassword="true" Placeholder="Password" />
     <Button Text="Login"  HeightRequest="50"  />
-   
-        <Button Text="FaceBook"  Clicked="FaceBookLogin_Clicked" 
-                Image="FACEBOOK.png" HeightRequest="60"/>
-   
-  </StackLayout>
+
+        <Button Text="FaceBook"  Clicked="Login_Clicked" Image="FACEBOOK.png" HeightRequest="60"/>
+        <Button Text="Google"  Clicked="Login_Clicked" Image="GOOGLE.png" HeightRequest="60"/>
+
+    </StackLayout>
 </ContentPage>

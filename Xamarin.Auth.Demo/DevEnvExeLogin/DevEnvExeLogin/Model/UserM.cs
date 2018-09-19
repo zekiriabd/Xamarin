@@ -2,11 +2,23 @@
 
 namespace FacebookLogin.Models
 {
+
     public class UserM
     {
-        public string Name { get; set; }
-        public Picture Picture { get; set; }
-        public string Id { get; set; }
+        public string id { get; set; }
+        public string name { get; set; }
+    }
+    public class GUserM: UserM
+    {
+        public string picture { get; set; }
+        public string family_name { get; set; }
+        public string email { get; set; }
+    }
+    public class FUserM: UserM
+    {
+        public Picture picture { get; set; }
+
+
         //public string Locale { get; set; }
         //public string Link { get; set; }
         //public Cover Cover { get; set; }
@@ -19,6 +31,7 @@ namespace FacebookLogin.Models
         //public string LastName { get; set; }
         //public string Gender { get; set; }
         //public bool IsVerified { get; set; }
+
 
     }
 
