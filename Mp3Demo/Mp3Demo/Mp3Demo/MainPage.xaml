@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Mp3Demo"
+             x:Class="Mp3Demo.MainPage">
+
+    <StackLayout BackgroundColor="Black">
+        
+        <Image Source="http://amazing-share.com/images/free_any_mp3_converter_main.png"></Image>
+        <Button x:Name="btn" Clicked="btn_Clicked" Text="play" TextColor="White" FontSize="20"/>
+        
+    </StackLayout>
+
+</ContentPage>
