@@ -1,6 +1,6 @@
 # Xamarin
 
- #### SwapListView in Android
+ #### SwapListView
  
  *  Add SwapListView.cs in your prtable project.
  *  Add SwapListViewRenderer.cs in your Droid.project
