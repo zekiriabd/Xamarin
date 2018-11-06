@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BottomTabNavigator"
+             x:Class="BottomTabNavigator.MainPage"
+             x:Name="MyPage"
+            CurrentPageChanged="MyPage_CurrentPageChanged">
+    
+    <ContentPage Title="Home" Icon="Home.png" BackgroundColor="#0489B1" >
+        <StackLayout BackgroundColor="#FFFFFF">
+        <Label Text="Home Page" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+    </ContentPage>
+    
+    
+    <ContentPage Title="New"  Icon="Add.png" BackgroundColor="#FA58D0">
+        <StackLayout BackgroundColor="#FFFFFF">
+            <Label Text="New Page" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage>
+    
+    
+    <ContentPage Title="Report"  Icon="Report.png" BackgroundColor="#5858FA">
+        <StackLayout BackgroundColor="#FFFFFF">
+            <Label Text="Report Page" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage>
+    
+    <ContentPage Title="Search"  Icon="Search.png" BackgroundColor="#04B404">
+        <StackLayout BackgroundColor="#FFFFFF">
+            <Label Text="Search Page" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage>
+
+</TabbedPage>
