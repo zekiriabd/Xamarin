@@ -1,6 +1,6 @@
 # ReactNative
 
-#### BottomTabNavigator [ 2 ]- React Native - شريط ادوات اسفل الشاشة
+#### BottomTabNavigator [ 2 ]- Xamarin - شريط ادوات اسفل الشاشة
 
 ## Platform Support
 
@@ -12,7 +12,7 @@
 
 
 <p align="center">
-   <img src="https://i.imgur.com/dRJJVHe.gif" alt="badges" style="margin:auto">
+   <img src="https://i.imgur.com/MWiQFud.gif" alt="badges" style="margin:auto">
 </p>
 
 
