@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RestClient"
+             x:Class="RestClient.MainPage">
+
+    <StackLayout>
+        
+        <Entry  x:Name="txJson" Placeholder="Json Result" HeightRequest="100" />
+     
+        <Entry  x:Name="txId" Placeholder="Id" />
+        <Entry  x:Name="txFirstName" Placeholder="FirstName" />
+        <Entry  x:Name="txLastName" Placeholder="LastName" />
+        <Entry  x:Name="txJob" Placeholder="Job" />
+        <Entry  x:Name="txEmail" Placeholder="Email" />
+        
+        <Button x:Name="btnGetInfo" Text="Get Client Info"  Clicked="btnGetInfo_Clicked"></Button>
+        
+    </StackLayout>
+
+</ContentPage>

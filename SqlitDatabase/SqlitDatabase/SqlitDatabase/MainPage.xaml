@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SqlitDatabase"
+             x:Class="SqlitDatabase.MainPage">
+
+    <StackLayout>
+        <Entry  x:Name="txId" Placeholder="Id" />
+        <Entry  x:Name="txFirstName" Placeholder="FirstName" />
+        <Entry  x:Name="txLastName" Placeholder="LastName" />
+        
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="BtnAdd" Text="Add"  Clicked="BtnAdd_Clicked"></Button>
+            <Button x:Name="BtnDel" Text="Delete"  Clicked="BtnDel_Clicked"></Button>
+            <Button x:Name="BtnSerch" Text="Serch"  Clicked="BtnSerch_Clicked"></Button>
+        </StackLayout>
+
+        <ListView x:Name="UserList">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                    <Grid>
+                            <Label Grid.Column="0" Text="{Binding userId}" />
+                            <Label Grid.Column="1" Text="{Binding firstName}" />
+                            <Label Grid.Column="2" Text="{Binding lastName}" />
+                    </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+                  
+    </StackLayout>
+
+</ContentPage>
