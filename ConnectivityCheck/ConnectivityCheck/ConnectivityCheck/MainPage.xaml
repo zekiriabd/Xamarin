@@ -5,7 +5,8 @@
              x:Class="ConnectivityCheck.MainPage">
 
     <StackLayout>
-        <Button x:Name="btnTestNet" Clicked="BtnTestNet_Clicked"></Button>
+        <Button x:Name="btnTestNet" Text="Essentials Info" Clicked="BtnTestNet_Clicked"></Button>
+       
     </StackLayout>
 
 </ContentPage>

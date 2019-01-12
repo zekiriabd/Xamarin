@@ -13,23 +13,31 @@ namespace ConnectivityCheck
         public MainPage()
         {
             InitializeComponent();
-
-            
         }
 
         private void BtnTestNet_Clicked(object sender, EventArgs e)
         {
-            //var current = Connectivity.NetworkAccess;
-            //if (current == NetworkAccess.Internet)
-            //{
-            //    DisplayAlert("test", "Connection to internet is available", "ok");
-            //}
+            var current = Connectivity.NetworkAccess;
+            if (current == NetworkAccess.Internet)
+            {
+                DisplayAlert("Connection", "Is conetcted", "ok");
+            }
+            else
+            {
+                DisplayAlert("Connection", "Is not conetcted", "ok");
+            }
 
-            var profiles = Connectivity.ConnectionProfiles;
+            List<ConnectionProfile> profiles = Connectivity.ConnectionProfiles.ToList();
             if (profiles.Contains(ConnectionProfile.WiFi))
             {
-                DisplayAlert("test", "Active Wi-Fi connection", "ok");
+                DisplayAlert("WIFI", "Wi-Fi  is Active", "ok");
             }
+            else
+            {
+                DisplayAlert("WIFI", "Wi-Fi is not Active", "ok");
+            }
+
+
         }
     }
 }
