@@ -13,7 +13,34 @@ namespace ConnectivityCheck
         public MainPage()
         {
             InitializeComponent();
+
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            Connectivity.ConnectivityChanged += Connectivity_ConnectivityChanged;
+        }
+
+        private void Connectivity_ConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
+        {
+            if (e.NetworkAccess == NetworkAccess.Internet)
+            {
+                lbConnection.FadeTo(0).ContinueWith((x) => { });
+            }
+            else
+            {
+                lbConnection.FadeTo(1).ContinueWith((x) => { });
+            }
+        }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            Connectivity.ConnectivityChanged -= Connectivity_ConnectivityChanged;
+        }
+
+
 
         private void BtnTestNet_Clicked(object sender, EventArgs e)
         {

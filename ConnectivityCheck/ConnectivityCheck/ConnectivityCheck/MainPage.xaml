@@ -4,9 +4,17 @@
              xmlns:local="clr-namespace:ConnectivityCheck"
              x:Class="ConnectivityCheck.MainPage">
 
-    <StackLayout>
-        <Button x:Name="btnTestNet" Text="Essentials Info" Clicked="BtnTestNet_Clicked"></Button>
-       
-    </StackLayout>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0" BackgroundColor="Gray">
+                <Button x:Name="btnTestNet" Text="Essentials Info" Clicked="BtnTestNet_Clicked"></Button>
+        </StackLayout>
+        <StackLayout Grid.Row="1">
+            <Label x:Name="lbConnection" HorizontalOptions="Center" Text="Disconnected" Opacity="0"/>
+        </StackLayout>
+    </Grid>
 
 </ContentPage>
