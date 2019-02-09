@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ShellDemo"
+             x:Class="ShellDemo.ShellMainPage"
+             
+             Title="ShellPage">
+    <!--FlyoutBehavior="Disabled"-->
+
+    <!--<ShellItem Title="Home">
+        <ShellSection>
+            <ShellContent>
+                <local:HomePage />
+            </ShellContent>
+        </ShellSection>
+    </ShellItem>-->
+
+
+    <!--<Shell.FlyoutHeaderTemplate>
+            <DataTemplate>
+                <StackLayout HorizontalOptions="Fill"
+                     VerticalOptions="Fill"
+                     BackgroundColor="White"
+                     Padding="16">
+                    <Label FontSize="Medium"
+                   Text="Smart Shopping">
+                        <Label.Margin>
+                            <Thickness Left="8" />
+                        </Label.Margin>
+                    </Label>
+                    <Button Image="photo"
+                    Text="By taking a photo">
+                        <Button.Margin>
+                            <Thickness Top="16" />
+                        </Button.Margin>
+                    </Button>
+                    <Button Image="ia"
+                    Text="By using AR">
+                        <Button.Margin>
+                            <Thickness Top="8" />
+                        </Button.Margin>
+                    </Button>
+                </StackLayout>
+            </DataTemplate>
+        </Shell.FlyoutHeaderTemplate>-->
+
+
+    <Shell.FlyoutHeader>
+        <local:FlyoutHeader />
+    </Shell.FlyoutHeader>
+    
+    <ShellItem Title="Bottom Tab Navigator" Icon="Home.png">
+
+        <ShellSection Title="Home" Icon="Home.png" >
+            <ShellContent>
+                <local:Home />
+            </ShellContent>
+        </ShellSection>
+
+        <ShellSection Title="Add" Icon="Add.png" >
+            <ShellContent>
+                <local:Add />
+            </ShellContent>
+        </ShellSection>
+
+        <ShellSection Title="Report" Icon="Report.png" >
+            <ShellContent>
+                <local:Report />
+            </ShellContent>
+        </ShellSection>
+
+        <ShellSection Title="Search" Icon="Search.png" >
+            <ShellContent>
+                <local:Search />
+            </ShellContent>
+        </ShellSection>
+
+
+    </ShellItem>
+
+    <ShellItem Title="Notifications" Icon="Search.png">
+        <ShellSection>
+            <ShellContent>
+                <local:Notifications />
+            </ShellContent>
+        </ShellSection>
+    </ShellItem>
+    
+    <!--<ShellContent Title="Profile" 
+        ContentTemplate="{DataTemplate local:ProfilePage}" >
+    </ShellContent>-->
+    
+    
+</Shell>
+
