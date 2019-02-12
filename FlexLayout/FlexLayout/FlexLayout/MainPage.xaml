@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FlexLayout"
+             x:Class="FlexLayout.MainPage">
+    <!--<StackLayout BackgroundColor="Red">
+        <BoxView BackgroundColor="Green" VerticalOptions="FillAndExpand" />
+        <BoxView BackgroundColor="Black" VerticalOptions="FillAndExpand" />
+
+    </StackLayout>-->
+    <!--<Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <BoxView BackgroundColor="Green" Grid.Column="0" />
+        <BoxView BackgroundColor="Black" Grid.Column="1" />
+    </Grid>-->
+
+    <FlexLayout  Direction="Column" JustifyContent="Center" AlignItems="Center" >
+        <BoxView WidthRequest="50" HeightRequest="50" BackgroundColor="PowderBlue"/>
+        <BoxView WidthRequest="50" HeightRequest="50" BackgroundColor="SkyBlue"/>
+        <BoxView WidthRequest="50" HeightRequest="50" BackgroundColor="SteelBlue"/>
+    </FlexLayout>
+</ContentPage>
