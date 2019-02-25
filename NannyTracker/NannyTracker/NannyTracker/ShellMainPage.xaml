@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NannyTracker"
+             x:Class="NannyTracker.ShellMainPage"
+             Title="ShellPage">
+    
+    <Shell.FlyoutHeader>
+        <local:FlyoutHeader />
+    </Shell.FlyoutHeader>
+
+    <ShellItem Title="{local:Translate ShellMenu_btnMyBaby}" Icon="Baby.png">
+
+        <ShellSection>
+            <ShellContent>
+                <local:BabyList />
+            </ShellContent>
+        </ShellSection>
+
+    </ShellItem>
+
+</Shell>
+

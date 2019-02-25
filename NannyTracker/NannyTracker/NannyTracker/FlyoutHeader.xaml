@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NannyTracker.FlyoutHeader">
+  <ContentView.Content>
+        <RelativeLayout 
+            x:Name="UserContent"
+            HorizontalOptions="FillAndExpand" 
+            VerticalOptions="FillAndExpand"
+            >
+            
+            <Image Source="background.jpg" Aspect="AspectFill" 
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0,Constant=0}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0,Constant=0}"
+                   RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=1,Constant=0}"
+                   RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=1,Constant=0}"
+                   />
+
+            <StackLayout  Margin="10,20,0,10">
+                <StackLayout>
+                    <Frame CornerRadius="30" HeightRequest="60" WidthRequest="60" HorizontalOptions="Start" Padding="0">
+                        <Image Source="{Binding ProfileImage}" HeightRequest="60" WidthRequest="60" Aspect="AspectFill"/>
+                    </Frame>
+                </StackLayout>
+                
+                <Label Text="{Binding UserName}"  FontSize="12" TextColor="White"/>
+                
+            </StackLayout>
+
+        </RelativeLayout>
+    </ContentView.Content>
+</ContentView>
