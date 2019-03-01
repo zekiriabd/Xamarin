@@ -49,7 +49,7 @@ namespace NannyTracker
             }
         }
 
-        public string UserName { get { return this.LastName + " 33333333333 " + this.FirstName; } }
+        public string UserName { get { return this.LastName + " " + this.FirstName; } }
         
     }
 

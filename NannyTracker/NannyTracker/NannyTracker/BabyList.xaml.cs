@@ -15,6 +15,7 @@ namespace NannyTracker
 		public BabyList ()
 		{
 			InitializeComponent ();
-		}
+            this.BindingContext = new BabyListVm();
+        }
 	}
 }
