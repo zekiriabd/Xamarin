@@ -20,10 +20,27 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>CFBundleDisplayName</key>
+	<!--Login by Google-->
+  
+  <key>CFBundleDisplayName</key>
 	<string>DevEnvExeLogin</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.companyname.DevEnvExeLogin</string>
+  <key>CFBundleURLTypes</key>
+  <array>
+    <dict>
+      <key>CFBundleURLName</key>
+      <string>Login.iOS</string>
+      <key>CFBundleURLSchemes</key>
+      <array>
+        <string>com.googleusercontent.apps.912800401855-eb2ohn99h2nf0d0ck7tlq7b3vjd2hqgq</string>
+      </array>
+      <key>CFBundleURLTypes</key>
+      <string>Viewer</string>
+    </dict>
+  </array>
+  
+  <!--Login by Google-->
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>UILaunchStoryboardName</key>
