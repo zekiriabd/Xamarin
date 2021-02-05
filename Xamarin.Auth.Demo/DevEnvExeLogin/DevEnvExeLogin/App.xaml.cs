@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using Xamarin.Auth;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -7,11 +8,12 @@ namespace DevEnvExeLogin
 {
     public partial class App : Application
     {
+        public static NavigationPage _nav;
         public App()
         {
             InitializeComponent();
 
-            MainPage = new Login();
+            MainPage = _nav = new NavigationPage(new Login());
         }
 
         protected override void OnStart()
